@@ -9,7 +9,6 @@ body {
     line-height: 1.4;
     background-color: #ffffff;
     color: #d60c0c;
-    /* full-screen responsive background image */
     background-image: url('assets/background.jpg'); /* update path to your image */
     background-size: cover; /* cover entire viewport */
     background-position: center; /* center the image */
