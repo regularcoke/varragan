@@ -12,7 +12,25 @@
         <img class="img2" src="assets/youth_is_the_answer.JPG" alt="Description">
         <h1><a class="link2" href="youtube.com">Click Here</a></h1>
     </div>
-     <audio id="introAudio" src="assets/audio.mp3" preload="auto"></audio>
+
+    <!-- audio for boo page -->
+    <audio id="scareAudio" preload="auto">
+        <source src="assets/audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // try to play as soon as the page loads; if blocked the user can click anywhere to start
+        window.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('scareAudio');
+            // attempt to play immediately
+            audio.play().catch(() => {
+                // if autoplay is blocked, let the user click to start
+                document.body.addEventListener('click', () => {
+                    audio.play();
+                }, { once: true });
+            });
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
