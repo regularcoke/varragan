@@ -1,6 +1,9 @@
 setTimeout(() => {
 
     document.querySelector('.img1').style.display = "none";
+
     document.querySelector('.img2').style.display = "block";
 
-}, 4000);
+    document.querySelector('.link2').style.display = "block";
+
+}, 3000);

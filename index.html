@@ -14,7 +14,7 @@
         <div class="right">
             <div class="content">
                 <header>
-                    <h1><a href="https://www.varragan.com/boo">www.Varragan.com</a></h1>
+                    <h1 style="color: #d60c0c;"><a id="booLink" href="boo.html">www.Varragan.com</a></h1>
                 </header>
                 <main>
                     <p>When Hell is full,<br>the dead will walk the Earth</p>
@@ -27,6 +27,15 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("booLink").addEventListener("click", function() {
+
+    const audio = document.getElementById("scareAudio");
+
+    audio.currentTime = 0;
+    audio.play();
+
+});
+    </script>
 </body>
 </html>
