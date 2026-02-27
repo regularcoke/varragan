@@ -80,6 +80,24 @@ footer {
     color: #555;
 }
 
+.full-img-cont {
+    position: relative;
+    width: 100vw;
+    height: 100dvh;
+}
+
+.full-img-cont img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img2 {
+    display: none;
+}
+
 /* responsive: stack columns on narrow screens */
 @media (max-width: 768px) {
     .container {
